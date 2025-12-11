@@ -3,6 +3,9 @@
 import hashlib
 import string
 
+# build the cipher to alternate a simple math problem for each letter in the key to represent a seed digit. 
+# then take the last digit of the value to represent an alphabet charecter.
+
 def key_to_shift_stream(key: str, length: int = 1000) -> list[int]:
     """
     Generate a long sequence of pseudo-random numbers (0–25) from a passphrase.
